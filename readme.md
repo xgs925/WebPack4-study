@@ -59,7 +59,7 @@
 
 - 样式(`url(...)`)或 HTML 文件(`<img src=...>`)中的图片链接
 
-  **详细请看官网文档**：[Modules](https://webpack.js.org/concepts/modules)       [MODULES](https://webpack.js.org/api) 
+  **详细请看官网文档**：[Modules](https://webpack.docschina.org/concepts/modules)       [MODULES](https://webpack.docschina.org/api) 
 
 ### 1.3 搭建Webpack环境
 
@@ -154,7 +154,7 @@ module.exports = {
 npx webpack --config + 自定义配置文件
 ```
 
-详细请看官方文档：[概念](https://webpack.js.org/concepts)    [配置](https://webpack.js.org/configuration)
+详细请看官方文档：[概念](https://webpack.docschina.org/concepts)    [配置](https://webpack.docschina.org/configuration)
 
 ### 1.7 webpack打包输出内容
 
@@ -220,7 +220,7 @@ module.exports = {
 };
 ```
 
-详细请看官方文档：[file-loader](https://webpack.js.org/loaders/file-loader)
+详细请看官方文档：[file-loader](https://webpack.docschina.org/loaders/file-loader)
 
 #### **将小图片转换成base64格式**
 
@@ -254,7 +254,7 @@ module.exports = {
 }
 ```
 
-详细请看官方文档：[url-loader](https://webpack.js.org/loaders/url-loader)
+详细请看官方文档：[url-loader](https://webpack.docschina.org/loaders/url-loader)
 
 ---
 
@@ -412,7 +412,7 @@ module.exports = {
 };
 ```
 
-详细请看官方文档：[asset-management](https://webpack.js.org/guides/asset-management)
+详细请看官方文档：[asset-management](https://webpack.docschina.org/guides/asset-management)
 
 ---
 
@@ -502,7 +502,7 @@ module.exports = {
 };
 ```
 
-详细请看官网：[Output](https://webpack.js.org/configuration/output)  [output-management](https://webpack.js.org/guides/output-management)
+详细请看官网：[Output](https://webpack.docschina.org/configuration/output)  [output-management](https://webpack.docschina.org/guides/output-management)
 
 ---
 
@@ -586,7 +586,7 @@ module.exports = {
 }
 ```
 
-详细请看官网：[devtool](https://webpack.js.org/configuration/devtool)
+详细请看官网：[devtool](https://webpack.docschina.org/configuration/devtool)
 
 ---
 
@@ -673,7 +673,7 @@ module.exports = {
 
 ```
 
-详细请看官网 ：[dev-server](https://webpack.js.org/configuration/dev-server)
+详细请看官网 ：[dev-server](https://webpack.docschina.org/configuration/dev-server)
 
 **扩充知识：自己写一个类似webpackdevserver的工具** 
 
@@ -830,7 +830,7 @@ if (module.hot) {
 
 > 引入css,用框架Vue，React 时，不需要写 module.hot.accept()，因为在使用css-loader，vue-loader，babel-preset时，就已经配置好了HMR，不需要自己写
 
-详细请看官方文档：[hot-module-replacement](https://webpack.js.org/guides/hot-module-replacement)   [api/hot-module-replacement](https://webpack.js.org/api/hot-module-replacement)  [concepts/hot-module-replacement](https://webpack.js.org/concepts/hot-module-replacement)  
+详细请看官方文档：[hot-module-replacement](https://webpack.docschina.org/guides/hot-module-replacement)   [api/hot-module-replacement](https://webpack.docschina.org/api/hot-module-replacement)  [concepts/hot-module-replacement](https://webpack.docschina.org/concepts/hot-module-replacement)  
 
 ---
 
@@ -961,7 +961,7 @@ npm i react react-dom --save
 npm install --save-dev @babel/preset-react
 ```
 
-详细内容请看官网：[babel-loader](https://webpack.js.org/loaders/babel-loader)
+详细内容请看官网：[babel-loader](https://webpack.docschina.org/loaders/babel-loader)
 
 ---
 
@@ -1013,7 +1013,7 @@ module.exports = {
 + "sideEffects": ["*.css"], //对 所有的css文件 不使用Tree shaking。如果填 false，就是都需要用到Tree shaking
 }
 ```
-详细内容请看官网：[tree-shaking](https://webpack.js.org/guides/tree-shaking)
+详细内容请看官网：[tree-shaking](https://webpack.docschina.org/guides/tree-shaking)
 
 ---
 
@@ -1326,7 +1326,7 @@ module.exports = merge(commenConfig, prodConfig)
   },
 }
 ```
-详细请看官网文档：[guides/production](https://webpack.js.org/guides/production)
+详细请看官网文档：[guides/production](https://webpack.docschina.org/guides/production)
 
 ---
 
@@ -1383,7 +1383,7 @@ module.exports = {
 }
 
 ```
-详细内容请看官网：[code-splitting](https://webpack.js.org/guides/code-splitting)
+详细内容请看官网：[code-splitting](https://webpack.docschina.org/guides/code-splitting)
 
 ---
 
@@ -1474,7 +1474,7 @@ module.exports = {
 }
 ```
 
-详细请看官方文档：[split-chunks-plugin](https://webpack.js.org/plugins/split-chunks-plugin) 
+详细请看官方文档：[split-chunks-plugin](https://webpack.docschina.org/plugins/split-chunks-plugin) 
 
 ---
 
@@ -1489,7 +1489,7 @@ module.exports = {
 >
 > 每一个文件就是一个 chunk
 
-详细请看官方文档：[lazy-loading](https://webpack.js.org/guides/lazy-loading)
+详细请看官方文档：[lazy-loading](https://webpack.docschina.org/guides/lazy-loading)
 
 ---
 
@@ -1512,7 +1512,7 @@ module.exports = {
 
 在控制台运行  `npm run dev-build` ,在根目录下生成 stats.json 文件。打开网址 `http://webpack.github.io/analyse/` ,把stats.json文件传上去，会出现分析结果。
 
-详细请看官方文档：[bundle-analysis 打包分析工具](https://webpack.js.org/guides/code-splitting/#bundle-analysis) 
+详细请看官方文档：[bundle-analysis 打包分析工具](https://webpack.docschina.org/guides/code-splitting/#bundle-analysis) 
 
 #### **介绍 [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer) 的使用：**
 
@@ -1598,7 +1598,7 @@ import(/* webpackPrefetch: true */ 'LoginModal');
 >
 > /* webpackPreload: true */: 和主加载流程一起并行加载。
 
-详细请看官方文档：[prefetchingpreloading-modules](https://webpack.js.org/guides/code-splitting/#prefetchingpreloading-modules)
+详细请看官方文档：[prefetchingpreloading-modules](https://webpack.docschina.org/guides/code-splitting/#prefetchingpreloading-modules)
 
 ---
 
@@ -1806,7 +1806,7 @@ module.exports = {
 }
 ```
 
-详细请看官方文档：[mini-css-extract-plugin](https://webpack.js.org/plugins/mini-css-extract-plugin)
+详细请看官方文档：[mini-css-extract-plugin](https://webpack.docschina.org/plugins/mini-css-extract-plugin)
 
 ---
 
@@ -1981,7 +1981,7 @@ const prodConfig = {
 module.exports = merge(commonConfig, prodConfig);
 ```
 
-详细请看官网文档：[manifest](https://webpack.js.org/concepts/manifest/#manifest)
+详细请看官网文档：[manifest](https://webpack.docschina.org/concepts/manifest/#manifest)
 
 ---
 
@@ -2137,7 +2137,7 @@ module.exports = {
 }
 ```
 
-详细请看官方文档：[imports-loader](https://webpack.js.org/loaders/imports-loader)   [shimming](https://webpack.js.org/guides/shimming) 
+详细请看官方文档：[imports-loader](https://webpack.docschina.org/loaders/imports-loader)   [shimming](https://webpack.docschina.org/guides/shimming) 
 
 ---
 
@@ -2448,7 +2448,7 @@ npm publish
 //但别人用你发布的库时
 npm i + 库名 
 ```
-详细请看官方文档：[externals](https://webpack.js.org/configuration/externals)   [author-libraries](https://webpack.js.org/guides/author-libraries)
+详细请看官方文档：[externals](https://webpack.docschina.org/configuration/externals)   [author-libraries](https://webpack.docschina.org/guides/author-libraries)
 
 ---
 
@@ -2514,7 +2514,7 @@ if ('serviceWorker' in navigator) { //如果浏览器支持serviceWorker，就�
 
 
 
-详细请看官方文档：[progressive-web-application](https://webpack.js.org/guides/progressive-web-application) 
+详细请看官方文档：[progressive-web-application](https://webpack.docschina.org/guides/progressive-web-application) 
 
 ---
 
@@ -2578,7 +2578,7 @@ npm install --save-dev @types/lodash
 
 
 
-详细请看官方文档：[typescript](https://webpack.js.org/guides/typescript)
+详细请看官方文档：[typescript](https://webpack.docschina.org/guides/typescript)
 
 ---
 
@@ -2638,7 +2638,7 @@ devServer: {
 	},
 ```
 
-详细请看官方文档：[devserverproxy](https://webpack.js.org/configuration/dev-server#devserverproxy) 
+详细请看官方文档：[devserverproxy](https://webpack.docschina.org/configuration/dev-server#devserverproxy) 
 
 ---
 
@@ -2683,7 +2683,7 @@ devServer: {//配置只在开发时有效，上线时后端也需配置
 	},
 ```
 
-详细请看官方文档：[devserverhistoryapifallback](https://webpack.js.org/configuration/dev-server#devserverhistoryapifallback) 
+详细请看官方文档：[devserverhistoryapifallback](https://webpack.docschina.org/configuration/dev-server#devserverhistoryapifallback) 
 
 ---
 
@@ -2743,7 +2743,7 @@ rules: [{
 
 在真实项目中，也可以不在webpack 中配置eslint，在提交git仓库时，git 钩子 eslint src 。但是没有图形交互式的错误提示。
 
-详细请看官方文档：[eslint-loader](https://webpack.js.org/loaders/eslint-loader)
+详细请看官方文档：[eslint-loader](https://webpack.docschina.org/loaders/eslint-loader)
 
 ---
 
@@ -2765,7 +2765,7 @@ rules: [{
 
 #### 5.使用 DLLPlugin 提高打包速度
 
-详细请看官方文档：[dll-plugin](https://webpack.js.org/plugins/dll-plugin/#root)
+详细请看官方文档：[dll-plugin](https://webpack.docschina.org/plugins/dll-plugin/#root)
 
 仓库源码 【[49](https://github.com/wudiufo/WebPack4-study/tree/master/lesson%2049)】
 
@@ -2851,7 +2851,7 @@ files.forEach(file => {
 .dll 为后缀的文件称为动态链接库，在一个动态链接库中可以包含给其他模块调用的函数和数据
 
 - 把基础模块独立出来打包到单独的动态连接库里
-- 当需要导入的模块在动态连接库里的时候，模块不能再次被打包，而是去动态连接库里获取 [dll-plugin](https://webpack.js.org/plugins/dll-plugin/)
+- 当需要导入的模块在动态连接库里的时候，模块不能再次被打包，而是去动态连接库里获取 [dll-plugin](https://webpack.docschina.org/plugins/dll-plugin/)
 
 ### 定义Dll
 
@@ -3157,7 +3157,7 @@ module.exports = {
 }
 ```
 
-详细请看官方文档：[loaders#thisquery](https://webpack.js.org/api/loaders#thisquery)  [hiscallback](https://webpack.js.org/api/loaders#thiscallback)  [thisasync](https://webpack.js.org/api/loaders#thisasync) 
+详细请看官方文档：[loaders#thisquery](https://webpack.docschina.org/api/loaders#thisquery)  [hiscallback](https://webpack.docschina.org/api/loaders#thiscallback)  [thisasync](https://webpack.docschina.org/api/loaders#thisasync) 
 
 ---
 
@@ -3167,7 +3167,7 @@ module.exports = {
 
 
 
-详细请看官方文档：[compiler-hooks](https://webpack.js.org/api/compiler-hooks) 
+详细请看官方文档：[compiler-hooks](https://webpack.docschina.org/api/compiler-hooks) 
 
 ---
 
